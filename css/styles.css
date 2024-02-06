@@ -1,0 +1,114 @@
+html{
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  min-height: 100vh;
+  background-image: url("../img/bg_op_year_2024.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  padding-block-start: 1.2rem;
+  padding-block-end: 2rem;
+  padding-inline: 1.5rem;
+}
+
+.search {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  padding-block: .7rem;
+  padding-inline: 1rem;
+}
+
+.header__item__start{
+  display: flex;
+  gap: .5rem;
+}
+
+.header__item__start__logo{
+  display: none;
+}
+
+.header__item__end__reward {
+  opacity: 0;
+}
+
+.search__form {
+  grid-column: 1 / 13;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3rem;
+  background-color: #4a4a4a;
+  padding-block: .355rem;
+  padding-inline-start: .8rem;
+  padding-inline-end: .56rem;
+}
+
+.search__form__input {
+  flex: 1;
+  font-size: .95rem;
+  color: #e6e6e6;
+  border: none;
+  background-color: transparent;
+}
+
+.search__form__input::placeholder {
+  color: #c9c9c9;
+}
+
+.search__form__input:focus {
+  outline: none;
+}
+
+.search__form__start {
+  display: flex;
+  align-items: center;
+  gap: .28rem;
+}
+
+.search__form__end__img {
+  inline-size: 2rem;
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .header {
+    padding-block-end: 4rem;
+  }
+
+  .header__item__start__logo {
+    display: block;
+  }
+
+  .header__item__end__cog,
+  .header__item__end__reward{
+    inline-size: 1.5rem;
+  }
+
+  .header__item__end__reward {
+    opacity: 1;
+  }
+
+  .search__form {
+    grid-column: 3 / 11;
+  }
+}
