@@ -1,36 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home Screen</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="./css/styles.css" rel="stylesheet">
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__item__start">
-        <img class="header__item__start__menu" src="./img/menu_dots.svg" alt="Menu dots icon">
-        <img class="header__item__start__logo" src="./img/MicrosoftStartLogo_dark.svg" alt="Microsoft Start logo">
-      </div>
-      <div class="header__item__end">
-        <img class="header__item__end__reward" src="./img/reward.svg" alt="Reward icon">
-        <img class="header__item__end__cog" src="./img/cog.svg" alt="Cog icon">
-      </div>
-    </header>
+<html lang="es">
 
-    <main>
-      <section class="search">
-        <form action="#" class="search__form">
-          <div class="search__form__start">
-            <img src="./img/search_icon.svg" alt="">
-            <input type="text" placeholder="Buscar en la web" class="search__form__input">
+<head>
+  <title>Microsoft Edge Search UI Clone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Alchr Dev">
+  <meta name="description" content="Busca en la web con Bing, accede a los sitios web más visitados y usa los accesos directos de Microsoft Office 365.">
+  <link href="./css/styles.css" rel="stylesheet">
+  <link rel="icon" href="./img/avatar.png" type="img/png">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__item__start">
+      <div class="header__item__start__square">
+        <img class="header__item__start__menu" src="./img/menu_dots.svg" alt="Menu dots icon">
+      </div>
+      <a href="https://www.msn.com/es-pe/feed?ocid=msedgntp&pc=U531&cvid=72bf6640dd284ea99394aa03813b9077&ei=6"
+        target="_blank">
+        <img class="header__item__start__logo" src="./img/MicrosoftStartLogo_dark.svg" alt="Microsoft Start logo">
+      </a>
+
+      <div class="header__item__launcher">
+        <h3 class="header__item__launcher__title">Microsoft 365</h3>
+        <div class="header__item__launcher__row">
+          <div class="header__item__launcher__item">
+            <a href="https://outlook.com/?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-Outlook">
+              <img class="header__item__launcher__item__img" src="./img/Outlook_24x.svg" alt="">
+            </a>
+            <span class="header__item__launcher__item__title">Outlook</span>
           </div>
-          <div class="search__form__end">
-            <img class="search__form__end__img" src="./img/microsoft_copilot_logo.png" alt="Microsoft Copilot logo">
+
+          <div class="header__item__launcher__item">
+            <a href="https://onedrive.live.com/?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-OneDrive">
+              <img class="header__item__launcher__item__img" src="./img/OneDrive_24x.svg" alt="">
+            </a>
+            <span class="header__item__launcher__item__title">OneDrive</span>
           </div>
-        </form>
-      </section>
-    </main>
- 
-  </body>
+
+          <div class="header__item__launcher__item">
+            <a
+              href="https://www.microsoft.com/microsoft-365/free-productivity-apps?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-Word">
+              <img class="header__item__launcher__item__img" src="./img/Word_24x.svg" alt="">
+            </a>
+            <span class="header__item__launcher__item__title">Word</span>
+          </div>
+
+          <div class="header__item__launcher__item">
+            <a
+              href="https://www.microsoft.com/microsoft-365/free-productivity-apps?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-Excel">
+              <img class="header__item__launcher__item__img" src="./img/Excel_24x.svg" alt="">
+            </a>
+            <span class="header__item__launcher__item__title">Excel</span>
+          </div>
+
+          <div class="header__item__launcher__item">
+            <a
+              href="https://www.microsoft.com/microsoft-365/free-productivity-apps?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-PowerPoint">
+              <img class="header__item__launcher__item__img" src="./img/PowerPoint_24x.svg" alt="">
+            </a>
+            <span class="header__item__launcher__item__title">PowerPoint</span>
+          </div>
+
+          <div class="header__item__launcher__item">
+            <a
+              href="https://www.microsoft.com/microsoft-365/free-productivity-apps?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-OneNote">
+              <img class="header__item__launcher__item__img" src="./img/OneNote_24x.svg" alt="">
+            </a>
+            <span class="header__item__launcher__item__title">OneNote</span>
+          </div>
+
+          <div class="header__item__launcher__item">
+            <a
+              href="https://www.microsoft.com/microsoft-365/free-productivity-apps?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-ToDo">
+              <img class="header__item__launcher__item__img" src="./img/ToDo_24x.svg" alt="">
+            </a>
+            <span class="header__item__launcher__item__title">ToDo</span>
+          </div>
+
+          <div class="header__item__launcher__item">
+            <a href="https://outlook.live.com/calendar/?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-Calendar">
+              <img class="header__item__launcher__item__img" src="./img/Calendar_24x.svg" alt="">
+            </a>
+            <span class="header__item__launcher__item__title">Calendar</span>
+          </div>
+
+          <div class="header__item__launcher__item">
+            <a
+              href="https://www.microsoft.com/microsoft-365/free-productivity-apps?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-Skype">
+              <img class="header__item__launcher__item__img" src="./img/Skype_24x.svg" alt="">
+            </a>
+            <span class="header__item__launcher__item__title">Skype</span>
+          </div>
+        </div>
+
+        <div class="header__item__launcher__item__more__c">
+          <a class="header__item__launcher__item__more__title"
+            href="https://www.microsoft.com/microsoft-365/free-productivity-apps?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-AllApps">Todas
+            las aplicaciones</a>
+          <img class="header__item__launcher__item__more__img" src="./img/arrow-right.svg" alt="">
+        </div>
+
+        <div class="header__item__launcher__item__more__c header__item__launcher__item__more__c--end">
+          <a class="header__item__launcher__item__more__title"
+            href="https://www.microsoft365.com/?ocid=PROD_Edge_CONS_WebXT_FM_EDG_NTP-Waffle-Office">Microsoft 365</a>
+          <img class="header__item__launcher__item__more__img" src="./img/arrow-right.svg" alt="">
+        </div>
+      </div>
+    </div>
+
+    <div class="header__item__end">
+      <a href="https://rewards.bing.com/?signin=1&FORM=ANNRW1">
+        <img class="header__item__end__reward" src="./img/reward.svg" alt="Reward icon">
+      </a>
+      <a href="#">
+        <img class="header__item__end__cog" src="./img/cog.svg" alt="Cog icon">
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="search">
+      <form action="https://www.bing.com/search" method="get" class="search__form">
+        <div class="search__form__start">
+          <img src="./img/search_icon.svg" alt="Search icon">
+          <input type="text" placeholder="Buscar en la web" class="search__form__input" name="q">
+        </div>
+        <div class="search__form__end">
+          <a href="https://copilot.microsoft.com/">
+            <img class="search__form__end__img" src="./img/copilot_color.svg" alt="Microsoft Copilot logo">
+          </a>
+        </div>
+      </form>
+    </section>
+
+    <section class="sites">
+      <article class="site">
+        <div class="site__box">
+          <a href="https://github.com/alchrdev" class="site__box__url">
+            <img src="./img/github.svg" alt="Go to my GitHub Account" class="site__box__img">
+          </a>
+        </div>
+        <span class="site__box__title">Github</span>
+      </article>
+
+      <article class="site">
+        <div class="site__box">
+          <a href="https://web.whatsapp.com/" class="site__box__url" title="WhatsApp Web">
+            <img src="./img/whatsapp.svg" alt="Open WhatsApp Web" class="site__box__img">
+          </a>
+        </div>
+        <span class="site__box__title">WhatsApp</span>
+      </article>
+
+      <article class="site">
+        <div class="site__box">
+          <a href="https://facebook.com" class="site__box__url" title="Discord">
+            <img src="./img/facebook.svg" alt="Go to Facebook" class="site__box__img">
+          </a>
+        </div>
+        <span class="site__box__title">Facebook</span>
+      </article>
+
+      <article class="site">
+        <div class="site__box">
+          <a href="https://web.telegram.org/k/" class="site__box__url" title="Telegram Web">
+            <img src="./img/telegram.svg" alt="Open Telegram Web" class="site__box__img">
+          </a>
+        </div>
+        <span class="site__box__title">Telegram</span>
+      </article>
+
+      <article class="site">
+        <div class="site__box">
+          <a href="https://unsplash.com/es/explora" class="site__box__url" title="Unsplash">
+            <img src="./img/unsplash.svg" alt="Explore Unsplash" class="site__box__img">
+          </a>
+        </div>
+        <span class="site__box__title">Unsplash</span>
+      </article>
+
+      <article class="site">
+        <div class="site__box">
+          <a href="https://www.youtube.com/" class="site__box__url" title="YouTube">
+            <img src="./img/youtube.svg" alt="Go to YouTube" class="site__box__img">
+          </a>
+        </div>
+        <span class="site__box__title">YouTube</span>
+      </article>
+
+      <article class="site">
+        <div class="site__box">
+          <a href="https://www.pinterest.com/" class="site__box__url" title="Pinterest">
+            <img src="./img/pinterest.svg" alt="" class="site__box__img">
+          </a>
+        </div>
+        <span class="site__box__title">Pinterest</span>
+      </article>
+
+      <article class="site">
+        <div class="site__box">
+          <a href="https://www.twitch.tv/" class="site__box__url" title="Twitch">
+            <img src="./img/twitch.svg" alt="Go to Twitch" class="site__box__img">
+          </a>
+        </div>
+        <span class="site__box__title">Twitch</span>
+      </article>
+
+      <article class="site">
+        <div class="site__box">
+          <a href="https://mail.google.com/mail/" class="site__box__url" title="Gmail">
+            <img src="./img/gmail.svg" alt="Open Gmail" class="site__box__img">
+          </a>
+        </div>
+        <span class="site__box__title">Gmail</span>
+      </article>
+    </section>
+  </main>
+
+  <script src="./js/index.js"></script>
+</body>
+
 </html>
